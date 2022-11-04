@@ -1,0 +1,19 @@
+#container{
+    background-color: #7fffd4;
+    height: 80vh;
+}
+
+.play{
+    float: right;
+    position: relative;
+    bottom: 40px;
+    right: 35px;
+    width: 100px;
+}
+
+.quadrato{
+    margin: auto;
+    margin-top: 50px;
+    width: 650px;
+    height: 650px;
+}
