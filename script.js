@@ -15,7 +15,10 @@ bottone.addEventListener("click", () =>{
     quadrato.classList.add("quadrato");
     contenitore.appendChild(quadrato);
     for (let index = 1; index < 101; index++) {
-        const element = array[index];
+        let pezzo = document.createElement("div");
+        pezzo.innerHTML = index;
+        pezzo.classList.add("pezzo");
+        quadrato.appendChild(pezzo);
     }
     bottone.disabled = true;
 })
