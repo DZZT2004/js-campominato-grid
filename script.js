@@ -3,8 +3,10 @@ var head = document.getElementById("header");
 var titolo = document.createElement("h1");
 var bottone = document.createElement("button");
 var contenitore = document.getElementById("container");
-titolo.innerHTML = "Campo Minato";
+var foot = document.getElementById("footer");
+titolo.innerHTML = "<img href='logo.png'>Campo Minato";
 bottone.innerHTML = "Play";
+foot.innerHTML = "Made with &hearts; by <a href='#'>Boolean</a>"
 bottone.classList.add("play");
 head.appendChild(titolo);
 head.appendChild(bottone);
@@ -18,6 +20,10 @@ bottone.addEventListener("click", () =>{
         let pezzo = document.createElement("div");
         pezzo.innerHTML = index;
         pezzo.classList.add("pezzo");
+        pezzo.addEventListener("click", () =>{
+            pezzo.style.backgroundColor = 'azure';
+            console.log(index);
+        })
         quadrato.appendChild(pezzo);
     }
     bottone.disabled = true;
